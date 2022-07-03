@@ -17,7 +17,7 @@ limitations under the License.
 package v1
 
 import (
-	"github.com/zoetrope/markdown-view/pkg/constants"
+	"github.com/littlewat/markdown-view/pkg/constants"
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -39,7 +39,7 @@ func (r *MarkdownView) SetupWebhookWithManager(mgr ctrl.Manager) error {
 // TODO(user): EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
 
 //! [webhook-defaulter]
-//+kubebuilder:webhook:path=/mutate-view-zoetrope-github-io-v1-markdownview,mutating=true,failurePolicy=fail,sideEffects=None,groups=view.zoetrope.github.io,resources=markdownviews,verbs=create;update,versions=v1,name=mmarkdownview.kb.io,admissionReviewVersions=v1
+//+kubebuilder:webhook:path=/mutate-view-littlewat-github-io-v1-markdownview,mutating=true,failurePolicy=fail,sideEffects=None,groups=view.littlewat.github.io,resources=markdownviews,verbs=create;update,versions=v1,name=mmarkdownview.kb.io,admissionReviewVersions=v1
 
 var _ webhook.Defaulter = &MarkdownView{}
 
@@ -60,7 +60,7 @@ func (r *MarkdownView) Default() {
 
 //! [webhook-validator]
 // TODO(user): change verbs to "verbs=create;update;delete" if you want to enable deletion validation.
-//+kubebuilder:webhook:path=/validate-view-zoetrope-github-io-v1-markdownview,mutating=false,failurePolicy=fail,sideEffects=None,groups=view.zoetrope.github.io,resources=markdownviews,verbs=create;update,versions=v1,name=vmarkdownview.kb.io,admissionReviewVersions=v1
+//+kubebuilder:webhook:path=/validate-view-littlewat-github-io-v1-markdownview,mutating=false,failurePolicy=fail,sideEffects=None,groups=view.littlewat.github.io,resources=markdownviews,verbs=create;update,versions=v1,name=vmarkdownview.kb.io,admissionReviewVersions=v1
 
 var _ webhook.Validator = &MarkdownView{}
 

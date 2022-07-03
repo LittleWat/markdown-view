@@ -19,11 +19,12 @@ package controllers
 import (
 	"context"
 	"fmt"
+
 	"k8s.io/utils/pointer"
 
-	viewv1 "github.com/zoetrope/markdown-view/api/v1"
-	"github.com/zoetrope/markdown-view/pkg/constants"
-	"github.com/zoetrope/markdown-view/pkg/metrics"
+	viewv1 "github.com/littlewat/markdown-view/api/v1"
+	"github.com/littlewat/markdown-view/pkg/constants"
+	"github.com/littlewat/markdown-view/pkg/metrics"
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/equality"
@@ -50,9 +51,9 @@ type MarkdownViewReconciler struct {
 }
 
 //! [rbac]
-//+kubebuilder:rbac:groups=view.zoetrope.github.io,resources=markdownviews,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=view.zoetrope.github.io,resources=markdownviews/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=view.zoetrope.github.io,resources=markdownviews/finalizers,verbs=update
+//+kubebuilder:rbac:groups=view.littlewat.github.io,resources=markdownviews,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=view.littlewat.github.io,resources=markdownviews/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=view.littlewat.github.io,resources=markdownviews/finalizers,verbs=update
 //+kubebuilder:rbac:groups=core,resources=configmaps,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=core,resources=services,verbs=get;list;watch;create;update;patch;delete

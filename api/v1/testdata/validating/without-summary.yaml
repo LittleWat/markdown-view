@@ -1,10 +1,10 @@
-apiVersion: view.zoetrope.github.io/v1
+apiVersion: view.littlewat.github.io/v1
 kind: MarkdownView
 metadata:
   name: without-summary
   namespace: default
   annotations:
-    message: 'admission webhook "vmarkdownview.kb.io" denied the request: MarkdownView.view.zoetrope.github.io "without-summary" is invalid: spec.markdowns: Required value: markdowns must have SUMMARY.md.'
+    message: 'admission webhook "vmarkdownview.kb.io" denied the request: MarkdownView.view.littlewat.github.io "without-summary" is invalid: spec.markdowns: Required value: markdowns must have SUMMARY.md.'
 spec:
   markdowns:
     page1.md: |

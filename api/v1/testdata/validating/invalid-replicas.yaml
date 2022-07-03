@@ -1,10 +1,10 @@
-apiVersion: view.zoetrope.github.io/v1
+apiVersion: view.littlewat.github.io/v1
 kind: MarkdownView
 metadata:
   name: invalid-replicas
   namespace: default
   annotations:
-    message: 'admission webhook "vmarkdownview.kb.io" denied the request: MarkdownView.view.zoetrope.github.io "invalid-replicas" is invalid: spec.replicas: Invalid value: 100: replicas must be in the range of 1 to 5.'
+    message: 'admission webhook "vmarkdownview.kb.io" denied the request: MarkdownView.view.littlewat.github.io "invalid-replicas" is invalid: spec.replicas: Invalid value: 100: replicas must be in the range of 1 to 5.'
 spec:
   markdowns:
     SUMMARY.md: |

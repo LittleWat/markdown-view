@@ -11,12 +11,12 @@ webhooks:
     service:
       name: webhook-service
       namespace: system
-      path: /mutate-view-zoetrope-github-io-v1-markdownview
+      path: /mutate-view-littlewat-github-io-v1-markdownview
   failurePolicy: Fail
   name: mmarkdownview.kb.io
   rules:
   - apiGroups:
-    - view.zoetrope.github.io
+    - view.littlewat.github.io
     apiVersions:
     - v1
     operations:
@@ -38,12 +38,12 @@ webhooks:
     service:
       name: webhook-service
       namespace: system
-      path: /validate-view-zoetrope-github-io-v1-markdownview
+      path: /validate-view-littlewat-github-io-v1-markdownview
   failurePolicy: Fail
   name: vmarkdownview.kb.io
   rules:
   - apiGroups:
-    - view.zoetrope.github.io
+    - view.littlewat.github.io
     apiVersions:
     - v1
     operations:

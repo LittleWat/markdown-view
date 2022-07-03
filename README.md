@@ -2,4 +2,4 @@
 
 forked from 
 
-https://github.com/zoetrope/kubebuilder-training
+https://github.com/littlewat/kubebuilder-training

@@ -1,4 +1,4 @@
-module github.com/zoetrope/markdown-view
+module github.com/littlewat/markdown-view
 
 go 1.17
 
