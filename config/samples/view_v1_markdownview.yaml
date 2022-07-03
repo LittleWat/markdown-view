@@ -8,9 +8,16 @@ spec:
       # Summary
 
       - [Page1](page1.md)
+      - [Page2](page2.md)
+
     page1.md: |
       # Page 1
 
-      一ページ目のコンテンツです。
+      - 1ページ目のコンテンツですばい。
+    page2.md: |
+      # Page 2
+
+      - 2ページ目のコンテンツですばい。
+      - hogehoge
   replicas: 1
   viewerImage: "peaceiris/mdbook:latest"
